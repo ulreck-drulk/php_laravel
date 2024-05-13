@@ -1,0 +1,19 @@
+version: '3'
+services:
+  laravel:
+    container_name: laravel-composer
+    image: bitnami/laravel:9
+    volumes:
+      - .:/var/www/storage/app
+    ports:
+      - 8005:80
+      - 3000:3000
+
+# networks:
+#   rogernet:
+#     ipam:
+#       driver: default
+#       config:
+#         - subnet: 192.168.17.0/24
+#         - ip_range: 192.168.17.5
+        
