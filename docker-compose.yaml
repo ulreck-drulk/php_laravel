@@ -4,13 +4,14 @@ services:
     container_name: laravel-composer
     image: bitnami/laravel:9
     volumes:
-      - .:/var/www/storage/app
+      - .:/app/bitnami/laravel
     ports:
-      - 8005:80
+      - 8000:8000
       - 3000:3000
-
+    
+      
 # networks:
-#   rogernet:
+#   laravel:
 #     ipam:
 #       driver: default
 #       config:
